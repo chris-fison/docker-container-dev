@@ -52,6 +52,8 @@ Run everything below from PowerShell until VSC opens.
 
 ### Usage
 
+You can either load VSC up and clone https://github.com/chris-fison/docker-container-dev.git or use below:
+
 1. Clone the repo:
    ```bash
    git clone https://github.com/chris-fison/docker-container-dev.git
