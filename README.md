@@ -2,13 +2,18 @@
 
 This repo provides a standard Docker-based development environment for any team to use with Visual Studio Code Dev Containers.
 
+## Usecase
+
 The idea is everyone in your team uses this container file, this sorts a few issues;
 
 - Everyones using a common toolset.
 - Applications are installed automatically.
 - Local machine only needs VSC, Git and Docker to run the container.
+- A quick and easy, repeatable build that takes minutes not hours to setup.
 
-So idea would be colleague A clones repo and runs the container, saves files wherever, colleague B logs on and updates that file and can run it etc without conflicts.
+In previous roles, we would need to build a developer laptop and it was a bit of a pain getting everyone using the same toolset, so this was a fun project for me to work on.
+
+## Development Ideas
 
 The container could even be used in a GitActions style CICD setup if you wanted to ensure both your devs and runners are using the same containers.
 
@@ -16,7 +21,7 @@ In addition to this, you can sub-module / subtrees the docker repo in your appli
 
 Lastly the .gitignore file hsould cover most extentions, as its likely someone will accidentally commit files into the container inseatd of thier repo (as suggested above re trees/submodules)
 
-Anyway, its not perfect but its a start. I like it atleast. Have fun.
+The image isnt exactly small when its created, so add/remove what you need to change this, only takes around 1-2 mins to boot up.
 
 ## 🚀 Features
 
@@ -27,6 +32,16 @@ Anyway, its not perfect but its a start. I like it atleast. Have fun.
 - Docker CLI
 - Python, pip, venv
 - OpenSSL for cert management
+
+It also installs common VSC extentions for the above such as;
+
+- Terraform
+- Ansible
+- Docker
+- Python
+- AKS
+- EKS
+- AWS Toolkit
 
 ## 🔧 Getting Started
 
