@@ -69,5 +69,5 @@ USER $USERNAME
 WORKDIR /home/$USERNAME
 
 # Copy CI config and documentation (optional)
-COPY .github/workflows/devcontainer-ci.yml /etc/devcontainer-ci.yml
-COPY README.md /home/$USERNAME/README.md
+# COPY .github/workflows/devcontainer-ci.yml /etc/devcontainer-ci.yml
+# COPY README.md /home/$USERNAME/README.md
