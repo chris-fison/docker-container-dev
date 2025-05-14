@@ -1,8 +1,6 @@
-# Docker Dev Container
+# Docker Dev Container (Platforms)
 
 This repo provides a simple Docker-based development environment for any team to use with Visual Studio Code Dev Containers.
-
-Primarily aimed at Platform / DevOps workloads.
 
 ![Docker](vsc.jpeg)
 
