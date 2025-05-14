@@ -18,5 +18,7 @@
     "ms-kubernetes-tools.vscode-kubernetes-tools",
     "ms-azuretools.vscode-aks-tools",
   ],
-  "remoteUser": "dev"
+    "remoteUser": "dev",
+  "updateContentCommand": "true",
+  "overrideCommand": false
 }
