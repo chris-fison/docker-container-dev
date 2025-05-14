@@ -56,7 +56,7 @@ Run everything below from PowerShell until VSC opens.
    ```bash
    git clone X
    cd dev-docker-container
-   git checkout dev
+   git checkout main
    code .
    ```
 
