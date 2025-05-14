@@ -2,6 +2,8 @@
 
 This repo provides a simple Docker-based development environment for any team to use with Visual Studio Code Dev Containers, aimed at Platform / DevOps workloads.
 
+![Docker](vsc.jpeg)
+
 ## Use Case
 
 The idea is everyone in your team uses this container file, this sorts a few issues;
