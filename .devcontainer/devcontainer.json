@@ -1,0 +1,22 @@
+{
+  "name": "Docker Container",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": "..",
+    "target": null
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "postCreateCommand": "aws --version && terraform version && kubectl version --client && helm version",
+  "extensions": [
+    "hashicorp.terraform",
+    "ms-azuretools.vscode-docker",
+    "redhat.ansible",
+    "ms-python.python",
+    "AmazonWebServices.aws-toolkit-vscode",
+    "ms-kubernetes-tools.vscode-kubernetes-tools",
+    "ms-azuretools.vscode-aks-tools",
+  ],
+  "remoteUser": "dev"
+}
