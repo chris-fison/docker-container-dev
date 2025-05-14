@@ -20,7 +20,7 @@ Anyway, its not perfect but its a start. I like it atleast. Have fun.
 
 ## 🚀 Features
 
-- AWS CLI + awsume
+- AWS CLI + awsume + boto3
 - Terraform
 - Ansible
 - kubectl, eksctl, helm
