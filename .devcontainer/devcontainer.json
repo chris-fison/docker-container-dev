@@ -16,7 +16,7 @@
     "ms-python.python",
     "AmazonWebServices.aws-toolkit-vscode",
     "ms-kubernetes-tools.vscode-kubernetes-tools",
-    "ms-azuretools.vscode-aks-tools"
+    "ms-azuretools.vscode-aks-tools",
   ],
   "remoteUser": "dev"
 }
