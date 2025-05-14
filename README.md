@@ -1,6 +1,6 @@
 # Docker Dev Container
 
-This repo provides a standard Docker-based development environment for any team to use with Visual Studio Code Dev Containers.
+This repo provides a standard simple Docker-based development environment for any team to use with Visual Studio Code Dev Containers.
 
 ## Use Case
 
@@ -11,17 +11,17 @@ The idea is everyone in your team uses this container file, this sorts a few iss
 - Local machine only needs VSC, Git and Docker to run the container.
 - A quick and easy, repeatable build that takes minutes not hours to setup.
 
-In previous roles, we would need to build a developer laptop and it was a bit of a pain getting everyone using the same toolset, so this was a fun project for me to work on.
+In previous roles, we would need to build a developer laptop and it was a bit of a pain getting everyone using the same toolset either due to OS or storing the executables someplace, so this was a fun project for me to work on.
 
 ## Development Ideas
 
-The container could even be used in a GitActions style CICD setup if you wanted to ensure both your devs and runners are using the same containers.
+You could expand the code for things such as;
 
-In addition to this, you can sub-module / subtrees the docker repo in your application repos so when you clone the application repo it pulls down the container also, meaning you could span the container across multiple repos automatically.
-
-Lastly the .gitignore file hsould cover most extentions, as its likely someone will accidentally commit files into the container inseatd of thier repo (as suggested above re trees/submodules)
-
-The image isnt exactly small when its created, so add/remove what you need to change this, only takes around 1-2 mins to boot up.
+- Use in a GitActions style CICD setup if you wanted to ensure both your devs and runners are using the same containers.
+- Sub-module / Sub-tree the docker repo in your application repos so when you clone the application repo it pulls down the container also, meaning you could span the container across multiple repos automatically.
+- Modify the .gitignore file, as its likely someone will accidentally commit files into the container instead of thier repo (as suggested above re trees/submodules).
+- Modify the .dockerignore file, as above.
+- Add/Remove any applications you need.
 
 ## 🚀 Features
 
@@ -90,7 +90,7 @@ The container rebuilds on launch if the Dockerfile or config changes. To force a
 Dev Containers: Rebuild Container
 ```
 
-I'd suggest building it once a week, remove the container and the image just so it updates your local image.
+I'd suggest building it once a week, remove the container and the image from Docker just so it updates your local image.
 
 ## ✅ CI
 
