@@ -1,6 +1,6 @@
 # Docker Dev Container
 
-This repo provides a standard simple Docker-based development environment for any team to use with Visual Studio Code Dev Containers.
+This repo provides a simple Docker-based development environment for any team to use with Visual Studio Code Dev Containers, aimed at Platform / DevOps workloads.
 
 ## Use Case
 
@@ -11,7 +11,9 @@ The idea is everyone in your team uses this container file, this sorts a few iss
 - Local machine only needs VSC, Git and Docker to run the container.
 - A quick and easy, repeatable build that takes minutes not hours to setup.
 
-In previous roles, we would need to build a developer laptop and it was a bit of a pain getting everyone using the same toolset either due to OS or storing the executables someplace, so this was a fun project for me to work on.
+I really like using this for deploying Terraform code, no matter what machine im on as long as I have the pre-reqs installed I can start a container without having to worry about all the installations for AWS CLI and Terraform etc.
+
+In previous roles, I had to build developer laptops manually so created complex powershell scripts with multiple pathings, this is sortve an evolution of that in the cloud world.
 
 ## Development Ideas
 
@@ -47,7 +49,7 @@ It also installs common VSC extentions for the above such as;
 
 ### Prerequisites
 
-A computer of some form, upto you what it is but if using Windows, use the below - if using Linux then it depends on your distro so I'll leave that to you, the container that spins up is Ubuntu.
+A computer of some form, upto you what it is but if using Windows, use the below - if using Linux/MacOS then it depends on your distro so I'll leave that to you, the container that spins up is Ubuntu.
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 - [Visual Studio Code](https://code.visualstudio.com/)
@@ -67,7 +69,7 @@ Run everything below from PowerShell until VSC opens.
 
 ### Usage
 
-You can either load VSC up and clone https://github.com/chris-fison/docker-container-dev.git or use below:
+You can either load VSC up and clone https://github.com/chris-fison/docker-container-dev.git or use the fancy way below:
 
 1. Clone the repo:
    ```bash
@@ -92,10 +94,6 @@ Dev Containers: Rebuild Container
 
 I'd suggest building it once a week, remove the container and the image from Docker just so it updates your local image.
 
-## ✅ CI
+Cheers!
 
-A GitHub Actions workflow verifies the container builds cleanly.
 
----
-
-_Questions or improvements? Raise an issue or PR._
